@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Custom-columns
+        link(rel="stylesheet", href="bootstrap.css")
+             
+    body
+         .container-fluid
+             .row
+                 .col-lg-1(style={ "height": "10vh","background-color": "blue","text-align":"center","line-height":"10vh"}) col-1
+                 .col-lg-1(style={ "height": "10vh","background-color": "red","text-align":"center","line-height":"10vh"}) col-1
+                 .col-lg-1(style={ "height": "10vh","background-color": "green","text-align":"center","line-height":"10vh"}) col-1
+                 .col-lg-1(style={ "height": "10vh","background-color": "pink","text-align":"center","line-height":"10vh"}) col-1
+                 .col-lg-1(style={ "height": "10vh","background-color": "yellow","text-align":"center","line-height":"10vh"}) col-1
+                 .col-lg-1(style={ "height": "10vh","background-color": "orange","text-align":"center","line-height":"10vh"}) col-1
+                 .col-lg-1(style={ "height": "10vh","background-color": "purple","text-align":"center","line-height":"10vh"}) col-1
+                 .col-lg-1(style={ "height": "10vh","background-color": "yellow-green","text-align":"center","line-height":"10vh"}) col-1
+                 .col-lg-1(style={ "height": "10vh","background-color": "teal","text-align":"center","line-height":"10vh"}) col-1
+                 .col-lg-1(style={ "height": "10vh","background-color": "aqua","text-align":"center","line-height":"10vh"}) col-1
+                 .col-lg-1(style={ "height": "10vh","background-color": "brow","text-align":"center","line-height":"10vh"}) col-1
+                 .col-lg-1(style={ "height": "10vh","background-color": "brown","text-align":"center","line-height":"10vh"}) col-1
+                 .col-lg-1(style={ "height": "10vh","background-color": "pink","text-align":"center","line-height":"10vh"}) col-1
+                 .col-lg-1(style={ "height": "10vh","background-color": "orange","text-align":"center","line-height":"10vh"}) col-1
+                 .col-lg-1(style={ "height": "10vh","background-color": "green","text-align":"center","line-height":"10vh"}) col-1
+             .row
+                 .col-lg-3(style={ "height": "10vh","background-color": "aqua","text-align":"center","line-height":"10vh"}) col-3
+                 .col-lg-3(style={ "height": "10vh","background-color": "green","text-align":"center","line-height":"10vh"}) col-3
+                 .col-lg-3(style={ "height": "10vh","background-color": "yellow","text-align":"center","line-height":"10vh"}) col-3
+                 .col-lg-3(style={ "height": "10vh","background-color": "orange","text-align":"center","line-height":"10vh"}) col-3
+                 .col-lg-3(style={ "height": "10vh","background-color": "blue","text-align":"center","line-height":"10vh"}) col-3
+             .row
+                 .col-lg-5(style={ "height": "10vh","background-color": "pink","text-align":"center","line-height":"10vh"}) col-5
+                 .col-lg-5(style={ "height": "10vh","background-color": "green-yellow","text-align":"center","line-height":"10vh"}) col-5
+                 .col-lg-5(style={ "height": "10vh","background-color": "teal","text-align":"center","line-height":"10vh"}) col-5
+             .row
+                 .col-lg-12(style={ "height": "10vh","background-color": "purple","text-align":"center","line-height":"10vh"}) col-12
+                 .col-lg-3(style={ "height": "10vh","background-color": "red","text-align":"center","line-height":"10vh"}) col-3               
+
+         hr
+         .container
+             h1 Bài tập custom columns bootstrap
+             p 
+             |Để custom được số cột trong một hàng của bootstrap em phải download file bootstrap-source. Sau khi download xong thì em tìm
+             | đến file _variable.scss trong thư mục bootstrap-source đã tải về. Và tìm biến $grid-columns. Giá trị mặc định của biến này là 12 tức
+             | là 12 cột trong 1 hàng. Ta có thể tùy biến số cột trong 1 hàng bằng cách thay đổi giá trị này. Tuy nhien ở đây em không muốn thay đổi
+             | trực tiếp vào file này. Nên em đã tạo thêm 1 file có tên là _custom.scss đặt trong cùng thư mục. Mục đích là để kiểm soát các mục đã 
+             |được custom nếu sau này có thêm những thứ khác tránh chỉnh sửa trực tiếp vào file gốc. Sau đó trong file custom em reset biến 
+             |$grid-columns bằng giá trị em mong muốn (ở đây là 15 và phải có !default) sau đó em @import file này vào trong file bootstrap.scss và 
+             |phải đảm bảo vị trí _custom.scss nằm trước _variable.scss. Sau đó tiền hành complie file bootstrap.scss thành file bootstrap.css và sử dụng.
+             | Bằng cách này em đã custom được số cột của 1 hàng trong bootstrap. 
+             h1 Bootstrap hỗ trợ customize
+             p
+             |Khi tìm hiểu về vấn đề này em cũng biết được bootstrap có hỗ trợ chúng ta customize trước khi download. Ta có thể chỉnh sửa những thứ
+             |ta muốn sau đó tải về dùng. Đây cũng là một cách giải quyết vấn đề này.
+
+
+
+
